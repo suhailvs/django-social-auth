@@ -49,7 +49,56 @@ Google OAuth2
 
 Recently Google launched OAuth2 support following the definition at `OAuth2 draft`.
 It works in a similar way to plain OAuth mechanism, but developers **must** register
-an application and apply for a set of keys. Check `Google OAuth2`_ document for details.
+an application and apply for a set of keys. 
+
+The steps below will get **Client ID** and **Client Secret**.
+
+- Register a new application at `Google Developer Console`_, you need to login using your gmail username and password. The link `Google Developer Console`_, will redirect to any of the below screens.  
+
+.. figure:: ../images/google_old.jpg
+   :alt: Google Old Website.
+
+   Figure 1. Google Old Website.
+
+.. figure:: ../images/google_1.jpg
+   :alt: Google new Cloud Console.
+
+   Figure 2. Google new Cloud Console.
+
+- if you redirect to Google Old Website(see Figure 1), click **Cloud Console** link.
+
+- now click **Create Project** Button(see Figure 2).
+
+- now Give a **Project Name** and click **Create** (see Figure 3).
+
+.. figure:: ../images/google_11.jpg
+   :alt: Create New Project.
+
+   Figure 3. Create New Project.
+
+- your project is created. Navigate to **APIs & atuh** -> **Registered apps** (see Figure 4).
+
+.. figure:: ../images/google_2.jpg
+   :alt: Register App.
+
+   Figure 4. Register App.
+
+- Gave a **Name** to your App. Select **Web Application** Option box (see Figure 5).
+
+.. figure:: ../images/google_3.jpg
+   :alt: Register New App.
+
+   Figure 5. Register New App.
+
+- That is it Your application is created. You need to provide site url(see Figure 6), then click **Update Button**.
+
+.. figure:: ../images/google_4.jpg
+   :alt: Client Keys.
+
+   Figure 6. Client Keys.
+
+Further documentation
+can be found at `Google OAuth2`_.
 
 **Note**:
   This support is experimental as Google implementation may change and OAuth2 is still
@@ -139,7 +188,8 @@ your consumer_key and consumer_secret keys.
 .. _Orkut API:  http://code.google.com/apis/orkut/docs/rest/developers_guide_protocol.html#Authenticating
 .. _Google OpenID: http://code.google.com/apis/accounts/docs/OpenID.html
 .. _Google OAuth: http://code.google.com/apis/accounts/docs/OAuth.html
-.. _Google OAuth2: http://code.google.com/apis/accounts/docs/OAuth2.html
+.. _Google OAuth2: https://developers.google.com/accounts/docs/OAuth2Login
+.. _Google Developer Console: https://code.google.com/apis/console
 .. _OAuth2 Registering: http://code.google.com/apis/accounts/docs/OAuth2.html#Registering
 .. _Google Data Protocol Directory: http://code.google.com/apis/gdata/docs/directory.html
 .. _OAuth2 draft: http://tools.ietf.org/html/draft-ietf-oauth-v2-10
